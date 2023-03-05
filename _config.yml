@@ -50,11 +50,12 @@ about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Java & Spring, Netty & Chromium & gRPC Framework, HTML5 기반의 6년차 서버 개발자입니다.
 
-  방송 미디어 관련 회사에서 신규 프로젝트의 TF팀부터 시작하여, 국내 8개의 T-Commerce 고객 사 및 해외 1억 5000만 명에 이르는 대규모 IPTV 플랫폼에서 백엔드 서비스 개발 및 인프라 구축 등을 해왔습니다.dfsfdfs
+  방송 미디어 관련 회사에서 신규 프로젝트의 TF팀부터 시작하여, 국내 8개의 T-Commerce 고객 사 및 해외 1억 5000만 명에 이르는 대규모 IPTV 플랫폼에서 백엔드 서비스 개발 및 인프라 구축 등을 해왔습니다.
 
-  개인적인 토이 프로젝트를 지속적으로 개선하여 사내 GitLab CI/CD 에 적용하는 등 팀 내의 업무 효율 상승에 기여한 경험이 있습니다.
-  
-  기능 설계 단계에서 UML 다이어그램을 작성하는 등 팀 구성원들과 적극적으로 커뮤니케이션 하여 보다 간결하고 이해하기 쉬운 코드를 만들려고 노력합니다.
+  설계 단계부터 UML 다이어그램을 작성하고 팀 구성원들과 적극적으로 커뮤니케이션 함으로써 보다 간결하고 이해하기 쉬운 코드를 만들려고 노력합니다.
+
+  <mark>주요 스킬</mark> Java, Spring Boot, Netty, gRPC
+
 
 content:
   - title: Experience # Title for the section
@@ -64,57 +65,74 @@ content:
         title: 에어코드
         link: www.aircode.com
         # link_text: boringcompany.com
-        sub_title: Backend Engineer
+        sub_title: Backend 개발자
         caption: 2017.12 - 현재
         quote: >
-          국내 8개의 T-Commerce 고객 사 및 해외 1억 5000만 명에 이르는 대규모 IPTV 플랫폼
+          원격 브라우저 격리(RBI) 솔루션 R&D
         description: | # this will include new lines to allow paragraphs
-            Evd아아
+            - 웹 브라우저 화면을 W3C 표준 기준 DOM 정보로 분해 및 재구성
+            - 국내외 다수 도메인의 CSS, Script 분석 및 폴리필 작성 경험
+            - Spring Security 활용한 API Filter 개발
+      - layout: left
+        quote: >
+          국내 8개의 T-Commerce 고객 사 및 해외 1억 5000만 명에 이르는 대규모 IPTV 플랫폼 서비스 구축
+        description: | # this will include new lines to allow paragraphs
+          - IPTV 플랫폼 셋탑박스와 연결된 TV 화면에서 가상 웹 브라우징 화면을 연동하는 서비스 개발
+          - 레거시 시스템의 코드 파편화 등 문제점 보완하고, 고가용성과 무중단 배포가 가능한 시스템으로 전환
+          - AWS, NHN Cloud(Toast) 환경에서 서비스 구축 경험
+          - 2021' <mark>최우수사원</mark>, 2020' <mark>우수사원</mark> 수상
 
   - title: 역량 # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
+        title: 오픈소스 활용
+        # link: github.com/sproogen
         # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        # additional_links:
+        # - title:  sproogen/modern-resume-theme
+        #   icon: fab fa-github
+        #   url: github.com/sproogen/modern-resume-theme
+        # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+        #   icon: fab fa-github
+        #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          - 5년 넘는 기간동안 Chromium Embeded Framework(CEF) 오픈소스 분석/개발 경험
+          - Java CEF 에서 발생하는 Memory Leak 해결 (Jmap, JvisualVM 사용)
+          - WebRTC 활용한 서버-클라이언트 간 Video 동기화
+          - JWT, OAuth 통한 인증된 사용자 확인 및 외부 리소스 요청 Proxy
+          - 갑작스런 정전 등 서버 간 연동이 끊어질 때, 전송 중이던 데이터 유실 문제를 gRPC와 SQLite를 이용하여 해결
+      - layout: top-middle
+        title: 대용량 트래픽 분산/ 대역폭 감소
+        description: | # this will include new lines to allow paragraphs
+          - 이미지 캐싱, PNG Optimize 적용하여 세션 당 대역폭 40% 감소
+          - 사용자의 접속 주소(Region) 에 기반하여 물리적 거리가 가까운 클러스터로 접속하도록 시스템 구축
+          - Sharding Sphere 적용하여 내부 시스템 간 트래픽 처리 성능을 2000/s -> 120,000/s 으로 개선
+      - layout: top-middle
+        title: DevOps
+        description: | # this will include new lines to allow paragraphs
+          - 사내 SVN to Git 전환 경험
+          - Maven, Jenkins, Nexus 로 CI/CD 관리
 
   - title: Skill # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
         quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+          현재 업무에 사용중 혹은 사용했던 기술들입니다.
+      - layout: left
+        title: Backend
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
-
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          - Java, Javascript, C++
+          - Spring Boot, Spring Security, Chromium, Netty, gRPC, MyBatis
+          - MariaDB, Oracle
+          - AWS, Toast, Git, Maven
+          - Eclipse, Visual Studio Code
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      음.
 
 # Footer
 footer_show_references: true
