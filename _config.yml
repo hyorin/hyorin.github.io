@@ -85,7 +85,7 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: 오픈소스 활용
+        title: 오픈소스/표준 활용
         # link: github.com/sproogen
         # link_text: Project Website
         # additional_links:
@@ -104,6 +104,7 @@ content:
       - layout: top-middle
         title: 대용량 트래픽 분산/ 대역폭 감소
         description: | # this will include new lines to allow paragraphs
+          - 일 평균 3만 건의 IPTV 셋탑박스 앱 클라이언트 접속 분산을 위한 HAProxy 적용 경험
           - 이미지 캐싱, PNG Optimize 적용하여 세션 당 대역폭 40% 감소
           - 사용자의 접속 주소(Region) 에 기반하여 물리적 거리가 가까운 클러스터로 접속하도록 시스템 구축
           - Sharding Sphere 적용하여 내부 시스템 간 트래픽 처리 성능을 2000/s -> 120,000/s 으로 개선
