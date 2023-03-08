@@ -54,7 +54,7 @@ about_content: | # this will include new lines to allow paragraphs
 
   설계 단계부터 UML 다이어그램을 작성하고 팀 구성원들과 적극적으로 커뮤니케이션 함으로써 보다 간결하고 이해하기 쉬운 코드를 만들려고 노력합니다.
 
-  <mark>주요 스킬</mark> Java, Spring Boot, Netty, gRPC
+  <mark>주요 스킬</mark> Java, Spring Boot, Netty, HAProxy, MyBatis, gRPC, Chromium Embeded Framework
 
 content:
   - title: Experience # Title for the section
@@ -101,6 +101,7 @@ content:
           - WebRTC 활용한 서버-클라이언트 간 Video 동기화
           - JWT, OAuth 통한 인증된 사용자 확인 및 외부 리소스 요청 Proxy
           - 갑작스런 정전 등 서버 간 연동이 끊어질 때, 전송 중이던 데이터 유실 문제를 gRPC와 SQLite를 이용하여 해결
+
       - layout: top-middle
         title: 대용량 트래픽 분산/ 대역폭 감소
         description: | # this will include new lines to allow paragraphs
@@ -108,6 +109,15 @@ content:
           - 이미지 캐싱, PNG Optimize 적용하여 세션 당 대역폭 40% 감소
           - 사용자의 접속 주소(Region) 에 기반하여 물리적 거리가 가까운 클러스터로 접속하도록 시스템 구축
           - Sharding Sphere 적용하여 내부 시스템 간 트래픽 처리 성능을 2000/s -> 120,000/s 으로 개선
+
+      # - layout: top-middle
+      #   title: 타 팀과의 연계 개발 경험
+      #   description: | # this will include new lines to allow paragraphs
+      #     - 셋탑박스 제조사마다 다르게 사용되는 연결 프로토콜(Socket, WebSocket, Socket.IO) 에 각기 다른 Netty Framework 의 Handler 를 연결하고, ByteBuf 를 연동규격에 따라 encode/decode 처리.
+      #     - 특히, TV 셋탑박스에 구동된 LiteClient 와, 플랫폼사 WAS 서비스 간 연동을 중간자 입장에서 처리하기 위해, 본인이 맡은 부분 외에도 다른 팀의 프로젝트들 모두 분석, Trouble shooting 경험
+      #     - 서비스 구축을 위해 항상 5~10명의 내/외부 개발 인원과 교류하며 업무 진행
+      #     - 그 공로를 인정받아 2021’ 최우수사원, 2020’ 우수사원을 수상함
+
       - layout: top-middle
         title: DevOps
         description: | # this will include new lines to allow paragraphs
@@ -117,7 +127,7 @@ content:
   - title: Skill # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: center
         quote: >
           현재 업무에 사용중 혹은 사용했던 기술들입니다.
       - layout: left
