@@ -79,7 +79,7 @@ content:
           - IPTV 플랫폼 셋탑박스와 연결된 TV 화면에서 가상 웹 브라우징 화면을 연동하는 서비스 개발
           - 레거시 시스템의 코드 파편화 등 문제점 보완하고, 고가용성과 무중단 배포가 가능한 시스템으로 전환
           - AWS, NHN Cloud(Toast) 환경에서 서비스 구축 경험
-          - 2021' <mark>최우수사원</mark>, 2020' <mark>우수사원</mark> 수상
+          - 2020' <mark>최우수사원</mark>, 2021' <mark>우수사원</mark> 수상
 
   - title: 역량 # Title for the section
     layout: list # Type of content section (list/text)
